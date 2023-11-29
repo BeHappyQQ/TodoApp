@@ -14,19 +14,19 @@
 	border-bottom: none;
 }
 
-.todo-list li.editing {
+.todo-list li.editing {                    /* <<< li на div   */
 	border-bottom: none;
 	padding: 0;
 }
 
-.todo-list li.editing .edit {
+.todo-list li.editing .edit {             /* <<< li на div   */
 	display: block;
 	width: calc(100% - 43px);
 	padding: 12px 16px;
 	margin: 0 0 0 43px;
 }
 
-.todo-list li.editing .view {
+.todo-list li.editing .view {          /* <<< li на div   */
 	display: none;
 }
 
@@ -84,7 +84,7 @@
 	color: #4d4d4d;
 }
 
-.todo-list li.completed label .description {
+.todo-list li.completed label .description {       /* <-------изменил li на div */
 	color: #cdcdcd;
 	text-decoration: line-through;
 }
@@ -114,19 +114,19 @@
 	content: '×';
 }
 
-.todo-list li .icon-edit {
+.todo-list li .icon-edit {                      /* <<< li на div   */
 	font-size: 19px;
 	right: 45px;
 }
 
-.todo-list li .icon-edit:after {
+.todo-list li .icon-edit:after {                  /* <<< li на div   */
 	content: '✎';
 }
 
-.todo-list li .edit {
+.todo-list li .edit {                         /* <<< li на div   */
 	display: none;
 }
 
-.todo-list li.editing:last-child {
+.todo-list li.editing:last-child {      /* <<< li на div   */
 	margin-bottom: -1px;
 }
